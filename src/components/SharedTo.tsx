@@ -19,7 +19,7 @@ export const SharedTo = ({ handleSearch, profiles }: SharedToProps) => {
         onKeyDown={noFunctionality}
         value=""
       />
-      <div>
+      <div className=" max-h-60 overflow-y-scroll scroll">
         {profiles.map((profile) => (
           <div className="pb-4 flex flex-row">
             <DetailedProfileWidget
