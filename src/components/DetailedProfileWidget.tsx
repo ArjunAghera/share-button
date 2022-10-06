@@ -14,7 +14,7 @@ export const DetailedProfileWidget = ({
   return (
     <div className=" flex flex-row">
       <Avatar character={title.charAt(0)} size="large" rounded="full" />
-      <div className="text-brandDarkBlue pl-4">
+      <div className="text-brandDark pl-4">
         <h4 className="text-lg">{title}</h4>
         <p className="text-sm">{subtitle}</p>
       </div>
