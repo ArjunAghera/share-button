@@ -34,7 +34,6 @@ export const SearchModal = ({ profiles }: SearchModalProps) => {
       setIsSelected(true);
     }
   };
-  console.log(selected);
   const searchedProfile = profiles.filter((profile) =>
     profile.name.toLowerCase().includes(inputValue.toLowerCase())
   );
@@ -44,8 +43,16 @@ export const SearchModal = ({ profiles }: SearchModalProps) => {
   const groupProfiles = searchedProfile.filter(
     (profile) => profile.type === "group"
   );
+  const handleEnter = (event: any) => {
+    if (event.key === "Enter") {
+      if (searchedProfile.length === 1) {
+        setSelected(searchedProfile[0].name);
+        setIsSelected(true);
+      }
+    }
+  };
   return (
-    <div className=" text-brandDark pb-4 overflow-y-scroll h-96 scroll font-brandDeafult">
+    <div className=" text-brandDark pb-4 overflow-y-scroll max-h-96 scroll font-brandDeafult">
       {!isSelected ? (
         <Input
           placeholder="Search emails, names, or groups"
@@ -53,6 +60,7 @@ export const SearchModal = ({ profiles }: SearchModalProps) => {
           withDropdown={true}
           onChange={handleChange}
           value={inputValue}
+          onKeyDown={handleEnter}
         />
       ) : (
         <div className="w-full my-4 flex justify-start items-center bg-brandLightGray">
@@ -74,7 +82,7 @@ export const SearchModal = ({ profiles }: SearchModalProps) => {
           </div>
         </div>
       )}
-      {isPerson && (
+      {isPerson && personProfiles.length !== 0 && (
         <div className=" ml-4 pt-4 pb-2">
           <p className=" pl-2 font-medium">Select a person</p>
           {personProfiles.map((profile) => (
@@ -84,11 +92,13 @@ export const SearchModal = ({ profiles }: SearchModalProps) => {
           ))}
         </div>
       )}
-      {isGroup && (
+      {isGroup && groupProfiles.length !== 0 && (
         <div className=" ml-4 pt-4 pb-2">
           <p className=" pl-2 font-medium">Select a group</p>
-          {groupProfiles.map((share) => (
-            <SmallProfileWidget title={share.name} />
+          {groupProfiles.map((profile) => (
+            <div onClick={() => handleSelectProfile(profile.name)}>
+              <SmallProfileWidget title={profile.name} />
+            </div>
           ))}
         </div>
       )}
