@@ -2,13 +2,14 @@ import { useState } from "react";
 import { AccessLevel } from "../data/accessLevel";
 import { Dropdown } from "./Dropdown";
 
-type InputProps = {
+interface InputProps {
   placeholder: string;
   onClick: (event: any) => void;
   onChange: (event: any) => void;
+  onKeyDown: (event: any) => void;
   value: string;
   withDropdown?: boolean;
-};
+}
 
 export const Input = ({
   placeholder,
@@ -16,6 +17,7 @@ export const Input = ({
   withDropdown,
   onChange,
   value,
+  onKeyDown,
 }: InputProps) => {
   const bgColor = withDropdown
     ? "bg-brandLightGray border-0"
@@ -35,6 +37,7 @@ export const Input = ({
         value={value || ""}
         onChange={onChange}
         onClick={onClick}
+        onKeyDown={onKeyDown}
       />
       {withDropdown && (
         <Dropdown
