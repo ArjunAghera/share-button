@@ -1,6 +1,6 @@
 export interface Profile {
   id: number;
-  name: string;
+  userName: string;
   detail: string;
   access: string;
   type: string;
