@@ -12,7 +12,7 @@ export const ShareButton = () => {
       <div>
         <Button color="dark" label="Share" onClick={handleClick} />
       </div>
-      {clicked && <ShareModal setClicked={setClicked} />}
+      {clicked && <ShareModal />}
     </>
   );
 };

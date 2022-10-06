@@ -6,11 +6,7 @@ import api from "../api";
 import { Profile } from "../types";
 import { WidgetFooter } from "./WidgetFooter";
 
-type ShareModalProps = {
-  setClicked: (active: boolean) => void;
-};
-
-export const ShareModal = ({ setClicked }: ShareModalProps) => {
+export const ShareModal = () => {
   const [profiles, setProfiles] = useState<Array<Profile>>([]);
   const [isSearchModel, setIsSearchModel] = useState(false);
 
