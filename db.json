@@ -1,0 +1,102 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "detail": "johndoe@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 2,
+      "name": "Arjun Aghera",
+      "detail": "arjunaghera@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 3,
+      "name": "Tom Cook",
+      "detail": "tomcook@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 4,
+      "name": "Yogesh ",
+      "detail": "yogesh@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 5,
+      "name": "Everyone at ShareButton",
+      "detail": "30 workspace members",
+      "access": "No access",
+      "type": "group"
+    },
+    {
+      "id": 6,
+      "name": "Engineering",
+      "detail": "15 Engineers",
+      "access": "No access",
+      "type": "group"
+    },
+    {
+      "id": 7,
+      "name": "Design",
+      "detail": "10 Designers",
+      "access": "No access",
+      "type": "group"
+    },
+    {
+      "id": 8,
+      "name": "Marketing",
+      "detail": "5 Marketing members",
+      "access": "No access",
+      "type": "group"
+    },
+    {
+      "id": 9,
+      "name": "Talent Acquisition",
+      "detail": "5 TA members",
+      "access": "No access",
+      "type": "group"
+    },
+    {
+      "id": 10,
+      "name": "Naruto",
+      "detail": "naruto@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 11,
+      "name": "Itachi",
+      "detail": "itachi@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 12,
+      "name": "Sasuke",
+      "detail": "sasuke@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 13,
+      "name": "Madara",
+      "detail": "madara@sb.com",
+      "access": "No access",
+      "type": "person"
+    },
+    {
+      "id": 14,
+      "name": "Kakashi",
+      "detail": "kakashi@sb.com",
+      "access": "No access",
+      "type": "person"
+    }
+  ]
+}
