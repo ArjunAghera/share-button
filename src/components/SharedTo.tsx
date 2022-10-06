@@ -8,14 +8,15 @@ interface SharedToProps {
 }
 
 export const SharedTo = ({ handleSearch, profiles }: SharedToProps) => {
-  const handleChange = () => {};
+  const noFunctionality = () => {};
   return (
     <div>
       <Input
         placeholder="People, emails, groups"
         onClick={handleSearch}
         withDropdown={false}
-        onChange={handleChange}
+        onChange={noFunctionality}
+        onKeyDown={noFunctionality}
         value=""
       />
       <div>
