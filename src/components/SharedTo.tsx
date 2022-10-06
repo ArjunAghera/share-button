@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Input } from "./Input";
 import { DetailedProfileWidget } from "./DetailedProfileWidget";
 import { Profile } from "../types";
@@ -26,7 +25,6 @@ export const SharedTo = ({ handleSearch, profiles }: SharedToProps) => {
               title={profile.name}
               subtitle={profile.detail}
             />
-            <button></button>
           </>
         ))}
       </div>
