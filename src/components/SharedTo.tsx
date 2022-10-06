@@ -21,12 +21,13 @@ export const SharedTo = ({ handleSearch, profiles }: SharedToProps) => {
       />
       <div>
         {profiles.map((profile) => (
-          <>
+          <div className="pb-4 flex flex-row">
             <DetailedProfileWidget
-              title={profile.name}
+              title={profile.userName}
               subtitle={profile.detail}
             />
-          </>
+            <p className=" ml-auto mr-4 text-brandDarkGray">{profile.access}</p>
+          </div>
         ))}
       </div>
     </div>
