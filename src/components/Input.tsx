@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { AccessLevel } from "../data/accessLevel";
 import { Dropdown } from "./Dropdown";
 
@@ -19,6 +18,7 @@ export const Input = ({
   value,
   onKeyDown,
 }: InputProps) => {
+  const noFunctionality = () => {};
   const bgColor = withDropdown
     ? "bg-brandLightGray border-0"
     : "bg-white border border-brandDarkGray ";
@@ -45,6 +45,7 @@ export const Input = ({
           options={options}
           selected={AccessLevel.NONE}
           bgColor="gray"
+          onChange={noFunctionality}
         />
       )}
       <button className="px-4 py-1 text-lg bg-brandLightGray text-brandDark rounded-r-md">
