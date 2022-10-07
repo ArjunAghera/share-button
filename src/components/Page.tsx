@@ -9,7 +9,7 @@ export const Page = () => {
         Click on Share button
       </h1>
       <div className=" pt-8 pl-24">
-        <ShareButton />
+        <ShareButton color="dark" />
       </div>
     </div>
   );

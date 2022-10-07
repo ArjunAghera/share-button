@@ -7,6 +7,16 @@ export default {
   component: ShareButton,
 } as ComponentMeta<typeof ShareButton>;
 
-export const Primary: ComponentStory<typeof ShareButton> = () => (
-  <ShareButton />
+const Template: ComponentStory<typeof ShareButton> = (args) => (
+  <ShareButton {...args} />
 );
+
+export const Dark = Template.bind({});
+Dark.args = {
+  color: "dark",
+};
+
+export const Light = Template.bind({});
+Light.args = {
+  color: "dark",
+};
