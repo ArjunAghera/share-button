@@ -63,6 +63,7 @@ export const SearchModal = ({
     if (event.key === "Enter") {
       if (searchedProfiles.length === 1) {
         setSelected(searchedProfiles[0]);
+        setSelectedName(searchedProfiles[0].userName);
         setIsSelected(true);
       }
     }
@@ -91,7 +92,7 @@ export const SearchModal = ({
   };
 
   return (
-    <div className=" text-brandDark pb-4 overflow-y-scroll max-h-96 scroll font-brandDeafult">
+    <div className=" text-brandDark pb-4 overflow-y-scroll max-h-96 scroll font-inter">
       {!isSelected ? (
         <Input
           placeholder="Search emails, names, or groups"
@@ -100,6 +101,7 @@ export const SearchModal = ({
           onChange={handleChange}
           value={inputValue}
           onKeyDown={handleEnter}
+          isFocused={true}
         />
       ) : (
         <div className="w-full my-4 flex justify-start items-center bg-brandLightGray">
