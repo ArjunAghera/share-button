@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Share button component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This component provies you the functionality like the share button in Notion. Every component used are developed from scratch by just using tailwindCSS and are highly reusable.
+While developing this component I learned about Storybook that builds a UI component library. So I developed the components and learned more about Storybook and developed stories i.e. component library for all the components developed in 2 Days.
 
-## Available Scripts
+Because of the use of Storybook one can just clone the repository and run it on their local to see what all components are used.
 
-In the project directory, you can run:
+## How to run this in your local system?
 
-### `npm start`
+To run this in your local system, you need Node.js, npm and Typescript installed in your system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Go to the following link to download Node.js: https://nodejs.dev/en/download/
+- After the installation of Node.js run the following command to install npm: `npm install -g npm`
+- Now run the following command to install Typescript: `npm install -g typescript`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Now open up your terminal in the directory where you would like to clone the repo; run following command to clone the repository: `git clone https://github.com/ArjunAghera/share-button`
 
-### `npm test`
+Once the repository is cloned, go to that directory and run: `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After the installation open up three terminals and run following commands in different terminal:
 
-### `npm run build`
+```
+npm run start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run storybook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm run server
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development Process
 
-### `npm run eject`
+My task was to replicate the share widget from Notion for which a design was provided and required UX was written in the figma file as well. So I developed the same usign fully resusable components and after the development to showcase all the components used I devloved the component library using Storybook.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+By understanding the requirements I decided to use TailwindCSS for styling the components. Also all the components I felt that might require customization can be customized through props in the brand colors only.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I created a mock API using json-server so that I don't need to use data files and also I can integrate any API by just making few changes.
