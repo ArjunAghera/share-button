@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { ShareTo } from "../components/ShareTo";
 
 export default {
-  title: "Example/ShareTo",
+  title: "Component/ShareTo",
   component: ShareTo,
 } as ComponentMeta<typeof ShareTo>;
 

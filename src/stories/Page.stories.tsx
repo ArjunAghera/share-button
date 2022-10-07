@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Page } from "../components/Page";
 
 export default {
-  title: "Example/Page",
+  title: "Component/Page",
   component: Page,
   parameters: {
     layout: "fullscreen",

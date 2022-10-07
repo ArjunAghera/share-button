@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { ShareModal } from "../components/ShareModal";
 
 export default {
-  title: "Example/ShareModal",
+  title: "Component/ShareModal",
   component: ShareModal,
   parameters: {
     layout: "fullscreen",

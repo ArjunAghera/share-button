@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { SearchModal } from "../components/SearchModal";
 
 export default {
-  title: "Example/SearchModal",
+  title: "Component/SearchModal",
   component: SearchModal,
   parameters: {
     layout: "fullscreen",

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { WidgetFooter } from "../components/WidgetFooter";
 
 export default {
-  title: "Example/WidgetFooter",
+  title: "Component/WidgetFooter",
   component: WidgetFooter,
 } as ComponentMeta<typeof WidgetFooter>;
 

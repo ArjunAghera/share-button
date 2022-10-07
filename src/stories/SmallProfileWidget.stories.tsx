@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { SmallProfileWidget } from "../components/SmallProfileWidget";
 
 export default {
-  title: "Example/SmallProfileWidget",
+  title: "Component/SmallProfileWidget",
   component: SmallProfileWidget,
 } as ComponentMeta<typeof SmallProfileWidget>;
 

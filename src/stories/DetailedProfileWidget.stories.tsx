@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { DetailedProfileWidget } from "../components/DetailedProfileWidget";
 
 export default {
-  title: "Example/DetailedProfileWidget",
+  title: "Component/DetailedProfileWidget",
   component: DetailedProfileWidget,
 } as ComponentMeta<typeof DetailedProfileWidget>;
 
