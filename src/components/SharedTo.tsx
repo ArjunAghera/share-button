@@ -18,6 +18,7 @@ export const SharedTo = ({ handleSearch, profiles }: SharedToProps) => {
         onChange={noFunctionality}
         onKeyDown={noFunctionality}
         value=""
+        isFocused={false}
       />
       <div className=" max-h-60 overflow-y-scroll scroll">
         {profiles.map((profile) => (

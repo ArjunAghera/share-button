@@ -8,6 +8,7 @@ interface InputProps {
   onKeyDown: (event: any) => void;
   value: string;
   withDropdown?: boolean;
+  isFocused?: boolean;
 }
 
 export const Input = ({
@@ -16,6 +17,7 @@ export const Input = ({
   withDropdown,
   onChange,
   value,
+  isFocused,
   onKeyDown,
 }: InputProps) => {
   const noFunctionality = () => {};
@@ -29,15 +31,16 @@ export const Input = ({
     AccessLevel.NONE,
   ];
   return (
-    <div className="w-full my-4 flex justify-center">
+    <div className="font-inter w-full mb-4 flex justify-center">
       <input
         type="search"
         placeholder={placeholder}
-        className={`rounded-l-md w-4/5 h-10 pl-4 ${bgColor}`}
+        className={`rounded-l-md w-4/5 h-10 pl-4 ${bgColor} outline-none`}
         value={value || ""}
         onChange={onChange}
         onClick={onClick}
         onKeyDown={onKeyDown}
+        autoFocus={isFocused}
       />
       {withDropdown && (
         <Dropdown
