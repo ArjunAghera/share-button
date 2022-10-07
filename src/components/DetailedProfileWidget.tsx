@@ -12,7 +12,7 @@ export const DetailedProfileWidget = ({
   subtitle,
 }: DetailedProfileWidgetProps) => {
   return (
-    <div className=" flex flex-row">
+    <div className=" font-inter flex flex-row">
       <Avatar character={title.charAt(0)} size="large" rounded="full" />
       <div className="text-brandDark pl-4">
         <h4 className="text-lg">{title}</h4>

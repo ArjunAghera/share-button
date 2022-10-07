@@ -10,7 +10,7 @@ module.exports = {
         brandMdGray: "#E5E7EB",
       },
       fontFamily: {
-        brandDeafult: ["Inter"],
+        inter: ["Inter"],
       },
     },
   },

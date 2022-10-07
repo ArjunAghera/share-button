@@ -20,7 +20,7 @@ export const Dropdown = ({
   return (
     <select
       name={name}
-      className={`${backgroundColor} outline-none w-28 `}
+      className={`${backgroundColor} outline-none w-28 font-inter`}
       onChange={onChange}
     >
       <option
