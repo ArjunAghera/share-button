@@ -4,11 +4,12 @@ This component provides you with functionality like the share button in Notion. 
 
 ## How to run this in your local system?
 
-To run this in your local system, you need Node.js, npm and Typescript installed in your system.
+To run this in your local system, you need Node.js, npm, Typescript and json-server installed in your system.
 
 - Go to the following link to download Node.js: https://nodejs.dev/en/download/
 - After the installation of Node.js run the following command to install npm: `npm install -g npm`
 - Now run the following command to install Typescript: `npm install -g typescript`
+- Now run the following command to install json-server: `npm install -g json-server`
 
 Now open up your terminal in the directory, where you would like to clone the repo; run the following command to clone the repository: `git clone https://github.com/ArjunAghera/share-button`
 
